@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    
+    <title>Sign Up</title>
+</head>
+<div style="width:100%; height: 100vh;  background: linear-gradient(to bottom left, #0099ff  -60%, #ff9900 80%);">
+    <body>
+    <div class="container">
+        
+    <h3>Enter Your Details</h3>
+    <form id="form" method="post" action="/RegisterUser">
+        
+    <label>Name</label>
+    <input type="text" class="form-control" required="true" name="name"><br>
+
+    
+    <label>Email</label>
+    <input type="email" class="form-control" required="true" name="email"><br>
+
+    
+    <label>Password</label>
+    <input type="password" class="form-control" required="true" name="password"><br>
+
+    <button id="RegisterUserButton">Submit</button>
+</form>
+</div>
+
+
+</body>
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+<script>
+    let form= document.getElementById('form')
+    form.addEventListener('submit', (e)=>{
+        e.preventDefault()
+        const formdata= new FormData(form)
+        const config = {
+            headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+        axios.post('http://localhost:3000/RegisterUser', formdata, config)
+            //console.log(response.data);
+        .then((response)=>{
+            alert(response.data);
+            console.log(response)})
+       .catch((err)=>{
+       alert(err.data);
+       console.log(err)});
+    })
+     -->
+</script>
+</div>
+</html>
